@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		  function tinh_tong(n)
+    {
+        var sum = 0;
+        var index = 0;
+        do
+        {
+     
+            if (index % 3 == 0){
+                sum += index;
+            }
+
+            index++;
+        }
+        while (index <= n);
+
+        return sum;
+    }
+
+    var n = parseInt(prompt("Nhập số cần kiểm tra"));
+    document.write("tong so chia het cho 3 tu  1 den " + n + " : " + tinh_tong(n));
+	</script>
+</body>
+</html>

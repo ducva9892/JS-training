@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		  function tinh_tong(n)
+    {
+        var tong = 0;
+        var index = 0;
+
+        while (index <= n)
+        {
+            tong += index/n;
+            index++;
+        }
+        return tong;
+    }
+
+    var n = parseInt(prompt("Nhap vao so can tinh"));
+    document.write("Tong cua  1/ " + n + " + 2/"+n+"...den " + n +"/"+ n + " la: " + tinh_tong(n));
+	</script>
+</body>
+</html>

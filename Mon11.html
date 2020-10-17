@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style >
+		.container{
+			display: block;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+			margin: auto 10px;
+			object-fit: cover;
+		}
+		#img{
+			width: 500px;
+			height: 500px;
+			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="./1.jpg" alt="1" onclick="changeImage('1.jpg')" >
+		<img src="./2.jpg" alt="2" onclick="changeImage('2.jpg')" >
+		<img src="./3.jpg" alt="3" onclick="changeImage('3.jpg')">
+		<img id="img" src="./1.jpg" />
+	</div>
+	<script >
+
+			    
+  function changeImage(imgName)
+  {
+     image = document.getElementById('img');
+     image.src = imgName;
+  }
+	</script>
+</body>
+</html>
